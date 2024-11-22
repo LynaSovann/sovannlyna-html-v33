@@ -5,9 +5,9 @@ metadata:
   namespace: argocd
   annotations:
     notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "updateDeploymentStatusTrigger"
-    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-4544443809"
-    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-4544443809"
-    notifications.argoproj.io/subscribe.on-deleted.telegram: "-4544443809"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
+    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-1002195638358"
+    notifications.argoproj.io/subscribe.on-deleted.telegram: "-1002195638358"
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
