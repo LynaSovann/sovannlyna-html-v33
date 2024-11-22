@@ -6,7 +6,7 @@ metadata:
   annotations:
     notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "updateDeploymentStatusWebhook"
     notifications.argoproj.io/subscribe.on-sync-succeeded.updateDeploymentStatusWebhook: ""
-    notifications.argoproj.io/subscribe.on-sync-succeeded.webhook: "updateDeploymentStatusWebhook"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.slack: updateDeploymentStatusWebhook
     notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
     notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-1002195638358"
     notifications.argoproj.io/subscribe.on-deleted.telegram: "-1002195638358"
