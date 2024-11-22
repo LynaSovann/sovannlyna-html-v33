@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: sovannlyna-html-v33
+  namespace: argocd
+  annotations:
+    notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "updateDeploymentStatusTrigger"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-4544443809"
+    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-4544443809"
+    notifications.argoproj.io/subscribe.on-deleted.telegram: "-4544443809"
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/LynaSovann/sovannlyna-html-v33.git
+    targetRevision: main
+    path: manifests
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: sovannlyna-html-v33
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+  revisionHistoryLimit: 5
