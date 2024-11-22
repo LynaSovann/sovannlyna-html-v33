@@ -4,10 +4,10 @@ metadata:
   name: sovannlyna-html-v33
   namespace: argocd
   annotations:
-    # notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
-    # notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-1002195638358"
-    # notifications.argoproj.io/subscribe.on-deleted.telegram: "-1002195638358"
-    notifications.argoproj.io/subscribe.on-sync-succeeded: webhook:updateDeploymentStatusWebhook,telegram:-1002195638358
+    notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
+    notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-1002195638358"
+    notifications.argoproj.io/subscribe.on-deleted.telegram: "-1002195638358"
+    # notifications.argoproj.io/subscribe.on-sync-succeeded: webhook:updateDeploymentStatusWebhook,telegram:-1002195638358
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
