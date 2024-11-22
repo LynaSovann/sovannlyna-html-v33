@@ -5,6 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "updateDeploymentStatusWebhook"
+    notifications.argoproj.io/subscribe.on-sync-succeeded.updateDeploymentStatusWebhook: ""
     notifications.argocd.argoproj.io/subscribe.on-sync-succeeded: "on-sync-succeeded"
     notifications.argoproj.io/subscribe.on-sync-succeeded.telegram: "-1002195638358"
     notifications.argoproj.io/subscribe.on-sync-failed.telegram: "-1002195638358"
